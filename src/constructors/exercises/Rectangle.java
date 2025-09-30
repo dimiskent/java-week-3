@@ -10,6 +10,19 @@ package constructors.exercises;
  4. Test both constructors.
 */
 
-public class Rectangle
-{
+public class Rectangle {
+    private final int width, height;
+    public Rectangle(int width) {
+        this.width = this.height = width;
+    }
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+    public int getArea() {
+        return width*height;
+    }
+    public int getPerimeter() {
+        return 2*(width+height);
+    }
 }

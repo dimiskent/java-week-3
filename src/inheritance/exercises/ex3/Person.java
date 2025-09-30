@@ -1,4 +1,4 @@
-package inheritance.exercises;
+package inheritance.exercises.ex3;
 
 /**
  TODO:
@@ -17,4 +17,13 @@ package inheritance.exercises;
 
 public class Person
 {
+    private final String name;
+    private final int age;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public void introduce() {
+        System.out.printf("Hi, my name is %s and I'm %d years old.\n", name, age);
+    }
 }

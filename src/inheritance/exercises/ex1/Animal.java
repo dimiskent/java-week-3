@@ -1,4 +1,4 @@
-package inheritance.exercises;
+package inheritance.exercises.ex1;
 
 /**
  TODO:
@@ -10,4 +10,7 @@ package inheritance.exercises;
 
 public class Animal
 {
+    public void makeSound() {
+        System.out.println("Some sound...");
+    }
 }

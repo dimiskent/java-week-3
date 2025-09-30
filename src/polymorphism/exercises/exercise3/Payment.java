@@ -1,4 +1,4 @@
-package polymorphism.exercises;
+package polymorphism.exercises.exercise3;
 
 /**
  TODO:
@@ -16,4 +16,7 @@ package polymorphism.exercises;
 
 public class Payment
 {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount);
+    }
 }

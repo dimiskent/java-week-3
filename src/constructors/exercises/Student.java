@@ -10,6 +10,19 @@ package constructors.exercises;
  4. Add a static method getTotalStudents().
 */
 
-public class Student
-{
+public class Student {
+    private static int studentCount = 0;
+    private int studentID;
+    private String studentName;
+    public Student(String name) {
+        this.studentID = ++studentCount;
+        this.studentName = name;
+    }
+    public void getStudentInfo() {
+        System.out.println("Name: " + this.studentName);
+        System.out.println("ID: " + this.studentID);
+    }
+    public static int getTotalStudents() {
+        return studentCount;
+    }
 }

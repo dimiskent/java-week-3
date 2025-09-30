@@ -1,4 +1,4 @@
-package polymorphism.exercises;
+package polymorphism.exercises.exercise1;
 
 /**
  TODO:
@@ -9,6 +9,9 @@ package polymorphism.exercises;
  3. Test them in main().
 */
 
-public class Animal
-{
+public class Animal {
+    public void eat() {
+        System.out.println("This animal eats food");
+    }
 }
+

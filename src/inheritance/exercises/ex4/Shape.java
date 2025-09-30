@@ -1,4 +1,4 @@
-package inheritance.exercises;
+package inheritance.exercises.ex4;
 
 /**
  TODO:
@@ -11,6 +11,7 @@ package inheritance.exercises;
 */
 
 
-public class Shape
+public abstract class Shape
 {
+    public abstract double getArea();
 }

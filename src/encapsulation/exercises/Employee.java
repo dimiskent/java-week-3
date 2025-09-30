@@ -10,5 +10,25 @@ package encapsulation.exercises;
  */
 public class Employee
 {
-    // your code here
+    private String name;
+    private double salary;
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary < 0 ? 0 : salary;
+    }
+    public void setSalary(double salary) {
+        if(salary < 0)
+            System.out.println("Value must be positive");
+        else
+            this.salary = salary;
+    }
+    public void giveRaise(double amount) {
+        salary += amount;
+    }
+    public String getName() {
+        return name;
+    }
+    public double getSalary() {
+        return salary;
+    }
 }

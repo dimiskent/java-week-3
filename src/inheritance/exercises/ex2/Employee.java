@@ -1,4 +1,4 @@
-package inheritance.exercises;
+package inheritance.exercises.ex2;
 
 /**
  TODO:
@@ -14,4 +14,13 @@ package inheritance.exercises;
 
 public class Employee
 {
+    private final String name;
+    private final double salary;
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+    public void work() {
+        System.out.println(name + " is working");
+    }
 }

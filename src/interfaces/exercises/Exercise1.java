@@ -10,6 +10,16 @@ package interfaces.exercises;
  * Note : Comparable<T> interface (built-in in Java).
  */
 
-public class Exercise1
-{
+public class Exercise1 {
+    public static void main(String[] args) {
+
+    }
+}
+
+class Student implements Comparable<Student> {
+
+    @Override
+    public int compareTo(Student o) {
+        return 0;
+    }
 }

@@ -16,4 +16,29 @@ package constructors.exercises;
 
 public class BankAccount
 {
+    private static int accountCount = 0;
+    private String accountNumber;
+    private int balance;
+    public BankAccount() {
+        this.accountNumber = "0000";
+        this.balance = 0;
+        accountCount++;
+    }
+    public BankAccount(String accountNumber, int balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        accountCount++;
+    }
+    public void deposit(int amount) {
+        balance += amount;
+    }
+    public void withdraw(int amount) {
+        balance -= amount;
+    }
+    public int getBalance() {
+        return balance;
+    }
+    public static int getTotalAccounts() {
+        return accountCount;
+    }
 }

@@ -8,6 +8,6 @@ package collections.exercises;
  4. Print the final list.
 */
 
-public class Exercise1
-{
+public class Exercise1 {
+
 }

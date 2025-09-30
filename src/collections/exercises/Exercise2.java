@@ -1,5 +1,8 @@
 package collections.exercises;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  TODO:
  1. Create a Set<String> cities.
@@ -10,4 +13,19 @@ package collections.exercises;
 
 public class Exercise2
 {
+    public static void main(String[] args) {
+        Set<String> cities = new HashSet<>();
+        cities.add("Brussels");
+        cities.add("Athens");
+        cities.add("Paris");
+        cities.add("Brussels");
+        cities.add("Barcelona");
+        System.out.println(cities);
+        if(cities.contains("Brussels")) {
+            System.out.println("Brussels is on the cities Set!");
+        }
+        if(cities.contains("Rome")) {
+            System.out.println("Rome is on the cities Set!");
+        }
+    }
 }

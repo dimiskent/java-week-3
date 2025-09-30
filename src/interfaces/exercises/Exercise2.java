@@ -11,4 +11,26 @@ package interfaces.exercises;
 
 public class Exercise2
 {
+    public static void main(String[] args) {
+        PaypalPayment paypal = new PaypalPayment();
+        BankTransferPayment bank = new BankTransferPayment();
+        paypal.pay(21);
+        bank.pay(21);
+    }
+}
+
+interface Payment {
+    void pay(double amount);
+}
+
+class PaypalPayment implements Payment {
+    public void pay(double amount) {
+        System.out.printf("Paid %s using PayPal\n", amount);
+    }
+}
+
+class BankTransferPayment implements Payment {
+    public void pay(double amount) {
+        System.out.printf("Paid %s using Bank Transfer\n", amount);
+    }
 }
